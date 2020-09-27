@@ -10,18 +10,18 @@ repositories {
     mavenCentral()
 }
 
-compileJava {
-	dependsOn clean
-}
+//compileJava {
+//	dependsOn clean
+//}
 
-clean {
-	doFirst{
-		delete += fileTree('dist').include('**/*')
-		delete += fileTree('build/libs').include('**/*')
-		delete += fileTree('build/classes').include('**/*')
-		delete += fileTree('build/resources').include('**/*')
-	}
-}
+//clean {
+//	doFirst{
+//		delete += fileTree('dist').include('**/*')
+//		delete += fileTree('build/libs').include('**/*')
+//		delete += fileTree('build/classes').include('**/*')
+//		delete += fileTree('build/resources').include('**/*')
+//	}
+//}
 
 war {
 	archiveName 'gradle-web-app.war'
